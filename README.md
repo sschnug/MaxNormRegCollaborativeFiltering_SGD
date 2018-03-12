@@ -8,7 +8,7 @@ This is a simplified implementation of:
 
 - Positive:
   - it works (when a Movielens dataset is accessible)
-  - it can provide very good results beating less complex models (SVD-based; Trace-norm and co.) with parameter-tuning (especially for large-scale datasets; e.g. Movielens 20M)
+  - it can provide very good results beating less complex models (SVD-based; trace-norm and co.) with parameter-tuning (especially for large-scale datasets; e.g. Movielens 20M)
   - it's vectorized
 - Negative:
   - the core-loop is a python-loop
@@ -28,6 +28,8 @@ For more parallelization look at the provided code by the authors:
   - a bit of work; but not that hard to implement in python
 - [HOGWILD!](http://i.stanford.edu/hazy/victor/Hogwild/)
   - much harder to implement in python as one needs a good understanding of lock-free parallelization (easier using C/C++ & OpenMP)
+- *Bonus-remark:* Last time i checked, the links above provided the original Netflix-competition dataset which is hard to obtain nowadays (was taken down; probably after some scientists deanonymized the data using external resources as IMDB-data) 
+
 
 For more user-friendly variance-reduction techniques (less hyper-parameter tuning needed), see:
 - [libmf](https://www.csie.ntu.edu.tw/~cjlin/libmf/)
