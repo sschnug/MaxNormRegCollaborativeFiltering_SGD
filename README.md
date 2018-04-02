@@ -1,6 +1,6 @@
 # MaxNormRegCollaborativeFiltering_SGD
 
-This is a simplified implementation of:
+This is a simplified (python-based) implementation of:
 
 > LEE, Jason D., et al. Practical large-scale optimization for max-norm regularization. In: Advances in Neural Information Processing Systems. 2010. S. 1297-1305.
 
@@ -16,6 +16,8 @@ This is a simplified implementation of:
   - there are no potential improvements provided (they exist somewhere hidden on my HDD) like:
     - Simple momentum (easy)
     - Variance-reduction techniques like AdaGrad
+
+A python-based implementation with a C++/Eigen core can be found [here](https://github.com/sschnug/Projected-Stochastic-Gradient-Max-norm-Matrix-factorization).
 
 A warning:
 
